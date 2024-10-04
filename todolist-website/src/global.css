@@ -1,0 +1,271 @@
+
+body {
+    background-color: #080414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 500px;
+    max-height: 750px;
+    background-color: #261D3E;
+    padding: 36px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.main-container * {
+    font-family: 'Poppins', sans-serif;
+    color: #EEE8FB;
+    letter-spacing: 0.5px;
+    outline: none;
+    
+}
+
+.main-container h2 {
+    font-size: 32px;
+    font-weight: 550;
+    line-height: 50px;
+}
+
+/* Scroll */
+.main-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.main-container::-webkit-scrollbar-thumb {
+    background-color: #D88B2F;
+    border-radius: 4px;
+}
+
+.main-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+.main-container {
+    scrollbar-width: thin;
+    scrollbar-color: #D88B2F transparent;
+}
+
+.error-message {
+    color: #d6292f;
+}
+
+/* Form */
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-container input {
+    display: flex;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #EEE8FB;
+
+    height: 50px;
+    width: 100%;
+    padding: 0 16px;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 450;
+    box-sizing: border-box;
+}
+
+.form-button, .logout-button {
+    border: none;
+    cursor: pointer;
+    background-color: #a284e8;
+    border-radius: 10px;
+    
+    width: 80%;
+    max-width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.form-button {
+    background-color: #a284e8;
+}
+
+.logout-button {
+    background-color: #8a1a1d;
+}
+
+.form-button:hover, .add-button:hover, .logout-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 12px  #a284e877;
+}
+
+.input-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 16px;
+    box-sizing: border-box;
+
+    height: 50px;
+    padding: 0 16px;
+    
+}
+
+.input-options a:hover, .form-link a:hover {
+    color: #d88b2f;
+}
+
+/* Media */
+
+@media (max-width: 472px) {
+    .input-options  {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+}
+@media (max-width: 500px) {
+    .main-container {
+        width: 100%;
+    }
+    body {
+        background-color: #261D3E;
+        display: unset;
+    }
+}
+
+/* Home - ToDoList */
+
+.task-input, .email-input {
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    gap: 15px;
+}
+
+.email-input {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.email-input input, .task-input input {
+    display: flex;
+    flex: 5;
+    border: 2px solid #a284e8;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 450;
+    box-sizing: border-box;
+    color: #EEE8FB;
+    background-color: transparent;
+}
+
+.add-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    border: none;
+    cursor: pointer;
+    background-color: #a284e8;
+    border-radius: 8px;
+    min-height: 50px;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+ol {
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #EEE8FB;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.task-text {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 450;
+    padding-right: 10px;
+
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 65%; 
+}
+
+li input[type="text"] {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 450;
+    padding-right: 10px;
+    border: none;
+    color: #EEE8FB;
+    background-color: transparent;
+
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 65%;
+}
+
+.edit-button, .delete-button, .save-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 12px;
+    height: 36px;
+    font-size: 20px;
+    font-weight: 550;
+    background-color: transparent;
+}
+
+.edit-button:hover {
+    background-color: #D88B2F;
+}
+
+.delete-button:hover {
+    background-color: #8a1a1d;
+}
+
+.save-button {
+    background-color: #4caf50;
+}
+
+.user-data {
+    height: 36px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+
+
+
+
+  
+
+  
