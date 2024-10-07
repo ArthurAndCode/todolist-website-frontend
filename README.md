@@ -11,3 +11,7 @@ This web application helps you stay organized with a to-do list that you can acc
 * Task management
 
 ![image](https://github.com/user-attachments/assets/ec299f50-c476-400d-8544-89a007ad5f21)
+
+![image](https://github.com/user-attachments/assets/76326393-4daf-4602-9558-d9510d0222fe)
+
+![image](https://github.com/user-attachments/assets/df54468c-4ff9-465a-ac2c-644a6105d147)
